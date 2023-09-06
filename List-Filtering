@@ -1,0 +1,8 @@
+# For this problem, we will take a list of positive integers and strings and filter out the strings. The new list should only include the integers from the first list.
+
+def filter_list(l):
+    return [x for x in l if isinstance(x, int) and x >= 0]
+
+# use a for loop to go through the list
+# use the 'isinstance' to find the int types in 'l'
+# eliminate negative options with x >= 0
