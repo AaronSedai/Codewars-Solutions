@@ -1,0 +1,11 @@
+# Jaden Smith is known for capitalizing every word he writes on social media. In this problem, we are taking a string and returning it with every word capitalized as Jaden Smith does
+
+def to_jaden_case(string):
+    output = ' '.join(a.capitalize() for a in string.split())
+    return output
+
+# create a string variable called 'output' (or whatever you want to call it)
+# use a for loop to split the string using .split()
+# join it back with a capitalized first letter
+  # using .capitalize()
+# return the string variable
