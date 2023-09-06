@@ -1,0 +1,14 @@
+# Return true if the first argument ends with the second argument. Return False if it does not
+# For example, the two arguments given are 'abc' and 'bc' -- the first argument 'abc' ends with the second argument 'bc' so it is True
+# Another example, two arguments given are 'abc' and 'd' -- the first argument 'abc' does not end with the second argument 'd' so it is False
+
+def solution(text, ending):
+    if text.endswith(ending):
+        return True
+    else:
+        return False
+    pass
+
+ # use the .endswith() function to see if 'text' ends with 'ending'
+    # if yes, return True
+    # if not, return False
