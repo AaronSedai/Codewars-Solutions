@@ -1,0 +1,22 @@
+# In this problem we need to categorize a new member of the Croquet Club as either 'Senior' or 'Open' with the following descriptions defining the categories
+# Senior = at least 55 years old and has a handicap of greater than 7
+# Handicaps range from -2 to +26; the better the player the lower the handicap
+
+def open_or_senior(data):
+   category = []
+    
+   for x in data:
+       if x[0] >= 55 and x[1] > 7:
+           category.append("Senior")
+       else:
+           category.append("Open")
+    
+   return category
+
+# create an empty list
+# for loop through 'data' in def open_or_senior
+    # if age is 55+ and handicap is over 7, category is...Senior!
+    # if anything besides that, category is...Open
+    # (the information about handicaps being -2 to +26 is unnecessary. don't overthink it!)
+    # append x to the appropriate category
+ # return the new list called 'category'
