@@ -1,0 +1,16 @@
+# This problem asks you to create a function that takes an integer (n > 1) and returns an array with all the integers divisors (except for 1 and the number itself) from smallest to largest.
+# If the number is prime, return the string "(integer) is prime"
+
+# Remember: the integer must be greater than 1
+# The code returns an array
+# The array includes all the integer's divisors except 1 and the number itself
+# The array orders the divisors from smallest to largest
+# Prime numbers cannot be divided by anything but 1 and themselves. 2 = 1 x 2 (and nothing else gives us 2) 7 = 1 x 7 (and nothing else gives us 7)
+# If the number is prime, a message is given "[the](integer) is prime"
+
+def divisors(n):
+    d = [i for i in range(2, n) if n % i == 0]
+    return d if len(d) > 0 else "{} is prime".format(n)
+
+        # create a for loop with a range of 2 to 'n' (2 because the integer must be greater than 1)
+        # if the integer/divisor = 0 and the length of the array is greater than 0, return the array
