@@ -1,0 +1,19 @@
+# Narcissistic Number = a number that is separated into its individual digits. Those digits are then raised to the power of however many numbers there are. If the sum of those raised digits equals the number itself, it's narcissistic
+# For example: 153 becomes 1, 5, and 3 and there are three numbers. So 1 ** 3 + 5 ** 3 + 3 ** 3 = 153. So this number is narcissistic
+# Another example: 16543 becomes 1, 6, 5, 4, and 3 and there are five numbers. The sum of all digits raised to the power of five = 12,173 which != 16,543 so it is not narcissistic
+
+# Return true or false depending on whether a number is narcissistic or not in base 10
+
+def narcissistic( value ):
+    s_value = str(value)
+    num_digits = len(s_value)
+    if value == (sum(int(n) ** num_digits for n in s_value)):
+        return True
+    else:
+        return False
+
+# turn the 'value' into a string
+# get the length of value
+# if value is the sum of the digits to the power of the length of 'value'
+  # then it is true
+# if not, then it is False
