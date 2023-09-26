@@ -1,0 +1,7 @@
+# Pig Latin - move the first letter of each word to the end of the word and add 'ay' after. Keep the punctuation where it is
+
+# use the isalpha() function which returns True if a character is a letter in the alphabet a-z. 
+# the punctuation should remain where it is
+
+def pig_it(text):    
+    return ' '.join(text[1:] + text[0] + 'ay' if text.isalpha() else text for text in text.split())
